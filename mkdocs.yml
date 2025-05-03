@@ -6,7 +6,7 @@ repo_name: rocky-linux/documentation
 edit_uri: "edit/main/docs/"
 theme:
   name: material
-  custom_dir: theme
+  custom_dir: .theme
   icon:
     edit: material/pencil
   features:
@@ -18,8 +18,8 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: https://docs.rockylinux.org/assets/logo.png
+  favicon: https://docs.rockylinux.org/assets/logo.png
   palette:
     - scheme: default
       media: "(prefers-color-scheme: light)"
