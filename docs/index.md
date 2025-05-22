@@ -10,24 +10,40 @@ tags:
 <!-- vale off -->
 ## Rocky Linux Documentation Project
 
-The **Rocky Linux Documentation Project** aims to provide a comprehensive and accessible resource for users, administrators, and developers working with Rocky Linux. As a *community-driven* initiative, this project addresses the need for high-quality documentation, covering various aspects of the operating system, from installation and configuration to advanced system administration tasks.
+### Overview
 
-=== "Goals and objectives"
+The Rocky Linux documentation project is an open-source initiative aimed at creating a comprehensive and user-friendly documentation for the Rocky Linux operating system. The project is driven by a community of contributors who are passionate about providing high-quality documentation to help users get the most out of Rocky Linux.
+History
 
-    - Provide detailed, well-structured documentation for Rocky Linux, focusing on clarity and usability.
-    - Cover a wide range of topics, including installation, system configuration, security, network management, and troubleshooting.
-    - Offer guidance on best practices for system administration, performance optimization, and security hardening.
-    - Include tutorials, examples, and real-world scenarios to help users apply theoretical knowledge in practical situations.
-    - Foster a community-driven approach, encouraging contributions, feedback, and collaboration among users and developers.
+Rocky Linux is a relatively new operating system, but its roots date back to the early days of CentOS. When CentOS announced its shift in focus towards CentOS Stream, a group of developers decided to fork the project and create a new, community-driven distribution. Rocky Linux was born, and with it, the need for a robust documentation project.
+Goals and Objectives
 
-=== "Target audience"
+The primary goal of the Rocky Linux documentation project is to provide accurate, up-to-date, and easy-to-understand documentation for users of all skill levels. The project aims to cover a wide range of topics, including:
 
-    - System administrators and IT professionals responsible for deploying, managing, and maintaining Rocky Linux systems.
-    - Developers and software engineers interested in building applications on top of Rocky Linux.
-    - Power users and enthusiasts seeking to explore advanced features and customization options.
-    - New users and beginners looking for a user-friendly introduction to Rocky Linux and its capabilities.
+* Installation and configuration
+* System administration
+* Security and hardening
+* Networking and clustering
+* Package management and software installation
+* Troubleshooting and debugging
 
-By following the guidelines and best practices outlined in this documentation project, users can ensure a smooth and secure experience with Rocky Linux, leveraging its full potential for their specific needs and use.
+### Target Audience
+
+The Rocky Linux documentation project is designed to cater to a diverse range of users, including:
+
+* System administrators
+* Developers
+* Power users
+* New users
+
+### Contributing to the Project
+
+The Rocky Linux documentation project is an open-source initiative, and contributions are welcome from anyone interested in helping. Whether you're a seasoned writer or a beginner, you can contribute to the project by:
+
+* Writing new content
+* Reviewing and editing existing content
+* Translating documentation into other languages
+* Providing feedback and suggestions
 
 ## MkDocs Material in Rocky Linux Documentation
 
@@ -121,83 +137,85 @@ By utilizing MkDocs with the MkDocs Material theme, the Rocky Linux Documentatio
     - Increased usability: Content tabs make it easy for users to navigate and find the information they need, improving the overall usability of your documentation.
     - Enhanced user experience: Content tabs provide a clean and intuitive interface, enhancing the overall user experience and making it more engaging.
 
-Data Tables
+=== "Data Tables"
 
-MkDocs Material provides a feature called data tables, which allows you to display data in a tabular format. Data tables are a great way to present complex data in a clear and concise manner, making it easier for users to understand and analyze the information.
-Benefits of Data Tables
+    MkDocs Material provides a feature called data tables, which allows you to display data in a tabular format. Data tables are a great way to present complex data in a clear and concise manner, making it easier for users to understand and analyze the information.
 
-Data tables offer several benefits, including:
+    **Benefits of Data Tables**
+
+    Data tables offer several benefits, including:
 
     - Improved readability: Data tables make it easy to read and understand complex data by presenting it in a clear and organized format.
     - Enhanced comparison: Data tables enable users to compare data across different categories, making it easier to identify trends and patterns.
     - Increased usability: Data tables provide a simple and intuitive way to display data, making it easier for users to navigate and understand the information.
     - Better decision-making: By presenting data in a clear and concise manner, data tables enable users to make more informed decisions.
 
-Types of Data Tables
+    Types of Data Tables
 
-MkDocs Material supports several types of data tables, including:
+    MkDocs Material supports several types of data tables, including:
 
     - Simple tables: These are basic tables that display data in a simple format.
     - Sortable tables: These tables allow users to sort the data by clicking on the column headers.
     - Filterable tables: These tables allow users to filter the data by entering keywords or phrases.
     - Responsive tables: These tables adapt to different screen sizes and devices, ensuring that the data is always displayed in a clear and readable format.
 
-Diagrams
+=== "Diagrams"
 
-MkDocs Material provides a feature called diagrams, which allows you to create and display diagrams in your documentation. Diagrams are a great way to visualize complex information, making it easier for users to understand and analyze the data.
-Benefits of Diagrams
+    MkDocs Material provides a feature called diagrams, which allows you to create and display diagrams in your documentation. Diagrams are a great way to visualize complex information, making it easier for users to understand and analyze the data.
 
-Diagrams offer several benefits, including:
+    **Benefits of Diagrams**
+
+    Diagrams offer several benefits, including:
 
     Improved understanding: Diagrams help to simplify complex information, making it easier for users to understand the relationships between different components.
     Enhanced visualization: Diagrams provide a visual representation of the data, making it easier for users to identify trends and patterns.
     Increased engagement: Diagrams make the documentation more engaging and interactive, helping to keep users interested and motivated.
     Better communication: Diagrams facilitate communication between teams and stakeholders, ensuring that everyone is on the same page.
 
-Types of Diagrams
+    Types of Diagrams
 
-MkDocs Material supports several types of diagrams, including:
+    MkDocs Material supports several types of diagrams, including:
 
     Flowcharts: These diagrams show the steps involved in a process or workflow.
     Sequence diagrams: These diagrams show the sequence of events or interactions between different components.
     Class diagrams: These diagrams show the relationships between different classes or objects.
     State diagrams: These diagrams show the different states or statuses of a system or component.
 
-```mermaid
-graph LR
-  A[Develop] --> B{Error};
-  B -->|Yes| C[Fix];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Update];
-```
+    ```mermaid
+    graph LR
+     A[Develop] --> B{Error};
+     B -->|Yes| C[Fix];
+     C --> D[Debug];
+     D --> B;
+     B ---->|No| E[Update];
+    ```
 
-```mermaid
-sequenceDiagram
-    participant User as :User with Lua Script
-    participant Interpreter as "Lua Interpreter"
-    participant Lexer as "Lexer (Tokenization)"
-    participant Parser as "Parser (Syntax Analysis)"
-    participant Executor as "Executor (Code Execution)"
-    participant Memory as "Memory Management"
+    ```mermaid
+    sequenceDiagram
+       participant User as :User with Lua Script
+       participant Interpreter as "Lua Interpreter"
+       participant Lexer as "Lexer (Tokenization)"
+       participant Parser as "Parser (Syntax Analysis)"
+       participant Executor as "Executor (Code Execution)"
+        participant Memory as "Memory Management"
 
-    Note over User,Interpreter: User Provides Lua Script
-    User->>Interpreter: Load Script
-    Interpreter->>Lexer: Tokenize Script
-    Lexer->>Interpreter: Return Tokens
-    Interpreter->>Parser: Parse Tokens
-    Parser->>Interpreter: Abstract Syntax Tree (AST)
-    Interpreter->>Executor: Execute AST
-    Executor->>Memory: Allocate/Deallocate Memory as Needed
-    Memory->>Executor: Provide Memory Access
-    Executor->>Interpreter: Execution Results
-    Interpreter->>User: Return Results
-    Note over Interpreter,User: Script Execution Completed
+       Note over User,Interpreter: User Provides Lua Script
+       User->>Interpreter: Load Script
+       Interpreter->>Lexer: Tokenize Script
+       Lexer->>Interpreter: Return Tokens
+       Interpreter->>Parser: Parse Tokens
+       Parser->>Interpreter: Abstract Syntax Tree (AST)
+       Interpreter->>Executor: Execute AST
+       Executor->>Memory: Allocate/Deallocate Memory as Needed
+       Memory->>Executor: Provide Memory Access
+       Executor->>Interpreter: Execution Results
+       Interpreter->>User: Return Results
+       Note over Interpreter,User: Script Execution Completed
 
-    alt Error Handling
-        Interpreter->>User: Report Syntax Errors
-    end
-```
+       alt Error Handling
+           Interpreter->>User: Report Syntax Errors
+       end
+    ```
 
 === "Footnotes"
 
@@ -222,34 +240,33 @@ sequenceDiagram
 
     [^1]: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
-Formatting Feature
+### Formatting Feature
 
 MkDocs Material provides a robust formatting feature that allows you to customize the appearance of your documentation. This feature is essential for creating professional-looking documents that are easy to read and understand.
+
 Benefits of Formatting
 
 The formatting feature in MkDocs Material offers several benefits, including:
-Improved Readability
 
-    MkDocs Material's formatting feature allows you to create clear headings, subheadings, and paragraphs, making it easier for readers to follow your content.
-    You can use bold, italics, and other formatting options to draw attention to important information and create visual hierarchy.
+: Improved Readability
 
-Enhanced Visual Appeal
+: MkDocs Material's formatting feature allows you to create clear headings, subheadings, and paragraphs, making it easier for readers to follow your content. You can use bold, italics, and other formatting options to draw attention to important information and create visual hierarchy.
 
-    With MkDocs Material's formatting feature, you can add images, diagrams, and other visual elements to break up text and make your content more engaging.
-    The feature also allows you to customize the layout and design of your pages, making it easier to create a consistent look and feel throughout your documentation.
+: Enhanced Visual Appeal
 
-Increased Accessibility
+: With MkDocs Material's formatting feature, you can add images, diagrams, and other visual elements to break up text and make your content more engaging. The feature also allows you to customize the layout and design of your pages, making it easier to create a consistent look and feel throughout your documentation.
 
-    MkDocs Material's formatting feature includes options for adding alt text to images, making your content more accessible to readers with visual impairments.
-    The feature also allows you to create tables, lists, and other structured content that is easy to read and understand.
+: Increased Accessibility
+
+: MkDocs Material's formatting feature includes options for adding alt text to images, making your content more accessible to readers with visual impairments. The feature also allows you to create tables, lists, and other structured content that is easy to read and understand.
 
 To get the most out of MkDocs Material's formatting feature, follow these best practices:
 
-    - Use clear and concise headings to organize your content.
-    - Use bold and italics to draw attention to important information.
-    - Use images and diagrams to break up text and create visual interest.
-    - Use code blocks to display technical information and examples.
-    - Use tables and lists to create structured content that is easy to read and understand.
+* Use clear and concise headings to organize your content.
+* Use bold and italics to draw attention to important information.
+* Use images and diagrams to break up text and create visual interest.
+* Use code blocks to display technical information and examples.
+* Use tables and lists to create structured content that is easy to read and understand.
 
 Keyboard Keys Feature
 
